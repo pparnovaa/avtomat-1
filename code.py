@@ -33,7 +33,7 @@ m3=9.82
 dp=1.046
 n=50
 st.write(" *Изменить исходные данные:* ")
-dsr = st.slider('Введите средний диаметр последней ступени dsr, м', min_value=0, max_value=4.0, step=0.1, value=dsr)
+dsr = st.slider('Введите средний диаметр последней ступени dsr, м', min_value=0.0, max_value=4.0, step=0.1, value=dsr)
 
 #dsr = st.number_input('Введите средний диаметр последней ступени dsr, м', value=dsr)
 #st.session_state.dsr =dsr
