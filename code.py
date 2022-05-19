@@ -43,10 +43,10 @@ Fx = st.number_input('Введите площадь сечения профил�
 st.session_state.Fx = Fx
 Jx = st.number_input('Введите момент инерции Jx, м4', value=Jx)
 st.session_state.Jx = Jx
-betau = st.slider('Введите угол установки betau, гр', min_value=0.0, max_value=90, step=0.1, value=betau)
+betau = st.slider('Введите угол установки betau, гр', min_value=0.0, max_value=90.0, step=0.1, value=betau)
 #betau = st.number_input('Введите угол установки betau, гр', value=betau)
 #st.session_state.betau = betau
-ro = st.slider('Введите плотность стали ro, гр', min_value=0.0, max_value=9000, step=1.0, value=ro)
+ro = st.slider('Введите плотность стали ro, гр', min_value=0.0, max_value=9000.0, step=1.0, value=ro)
 #ro = st.number_input('Введите плотность стали ro, гр', value=ro)
 #st.session_state.ro = ro
 E = st.number_input('Введите модуль упругости E, Па ', value=E)
