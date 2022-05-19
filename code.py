@@ -33,20 +33,22 @@ m3=9.82
 dp=1.046
 n=50
 st.write(" *Изменить исходные данные:* ")
-dsr = st.slider('Введите средний диаметр последней ступени dsr, м', min_value=0.0, max_value=4.0, step=0.01, value=dsr)
-l2 = st.slider('Введите длину рабочей лопатки l2, м', min_value=0.0, max_value=4.0, step=0.01, value=l2)
-#dsr = st.number_input('Введите средний диаметр последней ступени dsr, м', value=dsr)
-#st.session_state.dsr =dsr
-#l2 = st.number_input('Введите длину рабочей лопатки l2, м', value=l2)
-#st.session_state.l2 = l2
-Fx = st.number_input('Введите площадь сечения профиля Fx, м2', value=Fx, step = 0.001)
+#dsr = st.slider('Введите средний диаметр последней ступени dsr, м', min_value=0.0, max_value=4.0, step=0.01, value=dsr)
+#l2 = st.slider('Введите длину рабочей лопатки l2, м', min_value=0.0, max_value=4.0, step=0.01, value=l2)
+dsr = st.number_input('Введите средний диаметр последней ступени dsr, м', value=dsr)
+st.session_state.dsr =dsr
+l2 = st.number_input('Введите длину рабочей лопатки l2, м', value=l2)
+st.session_state.l2 = l2
+Fx = st.number_input('Введите площадь сечения профиля Fx, м2', value=Fx)
 st.session_state.Fx = Fx
 Jx = st.number_input('Введите момент инерции Jx, м4', value=Jx)
 st.session_state.Jx = Jx
-betau = st.number_input('Введите угол установки betau, гр', value=betau)
-st.session_state.Jx = Jx
-ro = st.number_input('Введите плотность стали ro, гр', value=ro)
-st.session_state.ro = ro
+betau = st.slider('Введите угол установки betau, гр', min_value=0.0, max_value=90, step=0.1, value=betau)
+#betau = st.number_input('Введите угол установки betau, гр', value=betau)
+#st.session_state.betau = betau
+ro = st.slider('Введите плотность стали ro, гр', min_value=0.0, max_value=9000, step=1.0, value=ro)
+#ro = st.number_input('Введите плотность стали ro, гр', value=ro)
+#st.session_state.ro = ro
 E = st.number_input('Введите модуль упругости E, Па ', value=E)
 st.session_state.E = E
 z2 = st.number_input('Введите число рабочих лопаток z2, шт ', value=z2)
