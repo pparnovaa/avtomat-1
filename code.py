@@ -161,7 +161,7 @@ fig = figure(
 title='Зависимость множителя fi от коэффициента жесткости бандажа и его относительной массы',
 x_axis_label='Множитель fi ',
 y_axis_label='Коэффициент жесткости бандажа')
-fig.line(coord_x6, coord_y6, line_width=3)
+fig.line(coord_x6, coord_y6, line_width=3, line_color="red")
 fig.line(coord_x5, coord_y5, line_width=3)
 fig.line(coord_x4, coord_y4, line_width=3)
 fig.line(coord_x2, coord_y2, line_width=3)
